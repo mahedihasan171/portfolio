@@ -5,14 +5,21 @@
  * Navigation items are rendered dynamically from
  * src/data/navigation.ts.
  */
-
+import { FaBars, FaTimes } from "react-icons/fa";
+import { useState } from "react";
 import { navigation } from "../../../data/navigation";
 
 const Navbar = () => {
+
+  /**
+ * Controls whether the mobile navigation drawer is open.
+ */
+const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <nav className="sticky top-0 bg-slate-950/90 backdrop-blur-md border-b border-slate-800">
       {/* Navigation container */}
-      <div className="max-w-6xl mx-auto flex h-20 items-center justify-between px-8">
+      <div className="container mx-auto flex h-20 items-center justify-between px-6 lg:px-8">
 
         {/* Portfolio Brand */}
         <a
@@ -23,7 +30,7 @@ const Navbar = () => {
         </a>
 
         {/* Navigation Links */}
-        <ul className="flex gap-8 list-none">
+        <ul className="hidden md:flex gap-8 list-none">
           {navigation.map((item) => (
             <li key={item.label}>
               <a
@@ -35,6 +42,13 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="md:hidden text-white text-2xl"
+          aria-label="Toggle navigation menu"
+        >
+          {isMenuOpen ? <FaTimes /> : <FaBars />}
+        </button>
 
       </div>
     </nav>
