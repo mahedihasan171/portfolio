@@ -15,8 +15,10 @@ function App() {
       <Navbar />
 
       {/* Main page content */}
-      <main>
-        <h1>Portfolio</h1>
+      <main className="max-w-7xl mx-auto px-8">
+        <h1 className="text-6xl font-bold mt-20">
+          Portfolio
+        </h1>
       </main>
     </>
   );
