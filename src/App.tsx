@@ -7,6 +7,8 @@
  */
 
 import Navbar from "./components/layout/Navbar";
+import Hero from "./sections/Hero";
+
 
 function App() {
   return (
@@ -15,10 +17,8 @@ function App() {
       <Navbar />
 
       {/* Main page content */}
-      <main className="max-w-7xl mx-auto px-8">
-        <h1 className="text-6xl font-bold mt-20">
-          Portfolio
-        </h1>
+      <main>
+        <Hero />
       </main>
     </>
   );
