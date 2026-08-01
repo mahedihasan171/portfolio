@@ -5,6 +5,7 @@
  * professional summary.
  */
 
+import EngineeringAnimation from "../../components/ui/EngineeringAnimation";
 import { socialLinks } from "../../data/social";
 
 const Hero = () => {
@@ -20,7 +21,7 @@ const Hero = () => {
 
         {/* Greeting */}
         <p className="mb-6 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
-            BUILDING RELIABLE SOFTWARE SYSTEMS
+           AUTOMATING RELIABLE SOFTWARE DELIVERY
         </p>
   
         {/* Name */}
@@ -29,16 +30,14 @@ const Hero = () => {
         </h1>
   
         {/* Role */}
-        <h2 className="mt-6 max-w-3xl text-2xl font-semibold leading-relaxed text-slate-300 md:text-4xl">
-        Building Reliable Software Systems Through
-        <br />
-        Cloud Infrastructure, Automation & Quality Engineering
+        <h2 className="mt-6 max-w-4xl text-2xl font-medium leading-relaxed text-slate-300 md:text-1xl">
+        Cloud Infrastructure • DevOps • Quality Engineering
         </h2>
   
         {/* Summary */}
-        <p className="mt-8 max-w-2xl text-lg leading-8 text-slate-400">
+        <p className="mt-8 max-w-xl text-lg leading-8 text-slate-400">
         Backed by over four years of Quality Engineering experience, 
-        I design and automate reliable software delivery through cloud infrastructure, 
+        Design and automate reliable software delivery through cloud infrastructure, 
         Infrastructure as Code, CI/CD, and modern DevOps practices while continuously 
         expanding into Platform Engineering, AIOps, and MLOps.
         </p>
@@ -48,7 +47,7 @@ const Hero = () => {
 
         <a
         href="#projects"
-        className="rounded-lg bg-cyan-500 px-6 py-3 text-center font-semibold text-slate-950 transition hover:bg-cyan-400"
+        className="rounded-lg bg-cyan-500 px-8 py-4 shadow-lg text-center font-semibold text-slate-950 transition hover:bg-cyan-400"
         >
         View Projects
         </a>
@@ -57,16 +56,14 @@ const Hero = () => {
         href="/resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
-        className="rounded-lg border border-slate-600 px-6 py-3 text-center font-semibold text-white transition hover:border-cyan-400 hover:text-cyan-400"
+        className="rounded-lg border border-slate-600 px-8 py-4 text-center font-semibold text-white transition hover:border-cyan-400 hover:text-cyan-400"
         >
         Download Resume
         </a>
         </div>
-
-            </div>
-
-        {/* Social Links */}
-        <div className="mt-10 flex flex-wrap gap-6">
+         
+         {/* Social Links */}
+         <div className="mt-10 flex flex-wrap gap-6">
             {socialLinks.map((social) => (
             <a
                 key={social.name}
@@ -79,13 +76,14 @@ const Hero = () => {
             </a>
           ))}
         </div>
+
+            </div>
                 
         {/* Right Side */}
-            <div className="flex flex-1 justify-center">
-                <div className="flex h-80 w-80 items-center justify-center rounded-full border border-cyan-500/30 text-slate-500">
-                Engineering Animation
-                </div>
-            </div>
+        <div className="flex flex-1 justify-center">
+            <EngineeringAnimation />
+        </div>
+
         </div>
             
 

@@ -7,11 +7,11 @@ export const socialLinks = [
 
     {
         name: "Github",
-        url: "",
+        url: "https://github.com/mahedihasan171",
     },
     {
         name: "LinkedIn",
-        url: "",
+        url: "https://www.linkedin.com/in/sqmahedi-hasan/",
     },
     {
         name: "Email",
