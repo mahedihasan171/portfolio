@@ -5,6 +5,8 @@
  * professional summary.
  */
 
+import { socialLinks } from "../../data/social";
+
 const Hero = () => {
     return (
         <section
@@ -42,6 +44,21 @@ const Hero = () => {
         </p>
 
             </div>
+
+        {/* Social Links */}
+        <div className="mt-10 flex flex-wrap gap-6">
+            {socialLinks.map((social) => (
+            <a
+                key={social.name}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-400 transition hover:text-cyan-400"
+            >
+            {social.name}
+            </a>
+          ))}
+        </div>
                 
         {/* Right Side */}
             <div className="flex flex-1 justify-center">
