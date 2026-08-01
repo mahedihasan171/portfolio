@@ -41,6 +41,26 @@ const Hero = () => {
         expanding into Platform Engineering, AIOps, and MLOps.
         </p>
 
+        {/* Call To Action Buttons */}
+        <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+
+        <a
+        href="#projects"
+        className="rounded-lg bg-cyan-500 px-6 py-3 text-center font-semibold text-slate-950 transition hover:bg-cyan-400"
+        >
+        View Projects
+        </a>
+
+        <a
+        href="/resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="rounded-lg border border-slate-600 px-6 py-3 text-center font-semibold text-white transition hover:border-cyan-400 hover:text-cyan-400"
+        >
+        Download Resume
+        </a>
+        </div>
+
             </div>
                 
         {/* Right Side */}
