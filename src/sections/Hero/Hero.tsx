@@ -47,7 +47,7 @@ const Hero = () => {
 
         <a
         href="#projects"
-        className="rounded-lg bg-cyan-500 px-8 py-4 shadow-lg text-center font-semibold text-slate-950 transition hover:bg-cyan-400"
+        className="rounded-lg bg-cyan-500 px-8 py-4 font-semibold text-slate-950 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-cyan-400"
         >
         View Projects
         </a>
@@ -56,7 +56,7 @@ const Hero = () => {
         href="/resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
-        className="rounded-lg border border-slate-600 px-8 py-4 text-center font-semibold text-white transition hover:border-cyan-400 hover:text-cyan-400"
+        className="rounded-lg border border-slate-600 px-8 py-4 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:text-cyan-400"
         >
         Download Resume
         </a>
@@ -70,7 +70,7 @@ const Hero = () => {
                 href={social.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-slate-400 transition hover:text-cyan-400"
+                className="text-slate-400 transition-all duration-300 hover:-translate-y-1 hover:text-cyan-400"
             >
             {social.name}
             </a>
