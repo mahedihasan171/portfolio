@@ -5,6 +5,7 @@
  * my engineering journey.
  */
 
+import "./EngineeringAnimation.css";
 import { technologies } from "../../data/technologies";
 
 const EngineeringAnimation = () => {
@@ -82,7 +83,7 @@ const EngineeringAnimation = () => {
       <div className="absolute h-60 w-60 rounded-full border border-cyan-500/20" />
 
       {/* Center */}
-      <div className="z-10 flex h-28 w-28 items-center justify-center rounded-full border border-cyan-500 bg-slate-900 font-semibold text-cyan-400 shadow-lg">
+      <div className="animate-center flex h-18 w-18 items-center justify-center rounded-full bg-cyan-500">
         DevOps
       </div>
 

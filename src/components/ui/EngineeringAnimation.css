@@ -1,0 +1,18 @@
+/* ========================================
+   Hero Engineering Animation
+======================================== */
+
+@keyframes pulse-center {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(1.08);
+    }
+  }
+  
+  .animate-center {
+    animation: pulse-center 3s ease-in-out infinite;
+  }
