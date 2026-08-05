@@ -8,6 +8,7 @@
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
 import { navigation } from "../../../data/navigation";
+import { Container } from "../";
 
 const Navbar = () => {
 
@@ -18,6 +19,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <nav className="sticky top-0 bg-slate-950/90 backdrop-blur-md border-b border-slate-800">
+      <Container className="flex h-20 items-center justify-between">
       {/* Navigation container */}
       <div className="container mx-auto flex h-20 items-center justify-between px-6 lg:px-8">
 
@@ -51,6 +53,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
         </button>
 
       </div>
+      </Container>
     </nav>
   );
 };

@@ -6,6 +6,7 @@
  */
 
 import EngineeringAnimation from "../../components/ui/EngineeringAnimation";
+import { Container } from "../../components/layout";
 import { socialLinks } from "../../data/social";
 import {
   FaGithub,
@@ -13,13 +14,24 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 
+
 const Hero = () => {
     return (
         <section
             id="hero"
-            className="flex min-h-[calc(100vh-80px)] items-center overflow-hidden"
+            className="flex min-h-screen items-center overflow-hidden pt-20"
         >
-        <div className="mx-auto flex w-full max-w-7xl flex-col gap-20 px-6 py-12 lg:flex-row lg:items-center lg:py-0">
+        <Container
+                  className="
+                    flex
+                    min-h-[calc(100vh-80px)]
+                    flex-col
+                    items-center
+                    justify-between
+                    gap-16
+                    lg:flex-row
+                  "
+                >
 
         {/*Left Side */}
             <div className="flex-[1.2]">
@@ -107,10 +119,8 @@ const Hero = () => {
             <EngineeringAnimation />
         </div>
 
-        </div>
-            
+        </Container> 
 
-        
       </section>
     );
   };

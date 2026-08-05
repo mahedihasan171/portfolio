@@ -4,11 +4,23 @@
 
 import { about } from "../../data/about";
 import { timeline } from "../../data/timeline";
+import { Container } from "../../components/layout";
 
 const About = () => {
   return (
     <section id="about"
     className="mx-auto max-w-7xl px-6 py-32 sm:px-8 lg:px-12">
+    <Container
+  className="
+    flex
+    min-h-[calc(100vh-80px)]
+    flex-col
+    items-center
+    justify-between
+    gap-16
+    lg:flex-row
+  "
+>
 
     {/*Section Heading */}
 
@@ -90,7 +102,7 @@ const About = () => {
       </div>
     ))}
   </div>
-  
+
 </div>
 
         {/* Right */}
@@ -113,6 +125,7 @@ const About = () => {
       </div>
 
       </div>
+      </Container>
 
     </section>
   );
