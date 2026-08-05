@@ -26,62 +26,56 @@ const EngineeringAnimation = () => {
         viewBox="0 0 100 100"
         >
           {/* Connection: DevOps -> AWS */}
-            <line
-              x1="50"
-              y1="50"
-              x2="50"
-              y2="10"
-              stroke="#22d3ee"
-              strokeWidth="0.6"
-            />
+          <line
+            className="connection-line"
+            x1="50"
+            y1="50"
+            x2="50"
+            y2="10"
+          />
             {/* Connection: DevOps -> Docker */}
             <line
+              className="connection-line"
               x1="50"
               y1="50"
               x2="10"
               y2="50"
-              stroke="#22d3ee"
-              strokeWidth="0.6"
             />
 
             {/* Connection: DevOps -> Kubernetes */}
             <line
+              className="connection-line"
               x1="50"
               y1="50"
               x2="90"
               y2="50"
-              stroke="#22d3ee"
-              strokeWidth="0.6"
             />
 
             {/* Connection: DevOps -> Linux */}
             <line
+              className="connection-line"
               x1="50"
               y1="50"
               x2="50"
               y2="90"
-              stroke="#22d3ee"
-              strokeWidth="0.6"
             />
 
             {/* Connection: DevOps -> GitHub */}
             <line
+              className="connection-line"
               x1="50"
               y1="50"
               x2="20"
               y2="20"
-              stroke="#22d3ee"
-              strokeWidth="0.6"
             />
 
             {/* Connection: DevOps -> Terraform */}
             <line
+              className="connection-line"
               x1="50"
               y1="50"
               x2="80"
               y2="80"
-              stroke="#22d3ee"
-              strokeWidth="0.6"
             />
       </svg>
 
@@ -100,7 +94,22 @@ const EngineeringAnimation = () => {
         {technologies.map((tech, index) => (
           <div
             key={tech.name}
-            className={`absolute -translate-x-1/2 -translate-y-1/2 animate-node ${animationDelays[index]} rounded-md border border-cyan-500/20 bg-slate-900 px-3 py-1 text-xs text-cyan-400 shadow-md `}
+            className={`
+              absolute
+              -translate-x-1/2
+              -translate-y-1/2
+              animate-node
+              ${animationDelays[index]}
+              rounded-md
+              border
+              border-cyan-500/20
+              bg-slate-900
+              px-3
+              py-1
+              text-xs
+              text-cyan-400
+              shadow-md
+              `}
             style={{
               left: tech.x,
               top: tech.y,

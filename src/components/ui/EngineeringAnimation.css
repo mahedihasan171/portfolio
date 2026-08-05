@@ -58,3 +58,14 @@
     animation-delay: 2.5s;
   }
   
+
+  /* ========================================
+   SVG Connection Lines
+======================================== */
+
+.connection-line {
+    stroke: #22d3ee;
+    stroke-width: 0.6;
+    opacity: 0.55;
+    filter: drop-shadow(0 0 2px rgba(34, 211, 238, 0.5));
+  }
