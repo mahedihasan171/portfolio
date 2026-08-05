@@ -3,6 +3,7 @@
  */
 
 import { about } from "../../data/about";
+import { timeline } from "../../data/timeline";
 
 const About = () => {
   return (
@@ -27,6 +28,19 @@ const About = () => {
         {/* Left */}
 
         {/* Left */}
+      {/* Left */}
+<div className="max-w-xl">
+
+      <h3 className="text-2xl font-semibold text-white">
+        My Journey
+      </h3>
+
+      <div className="mt-4 h-1 w-16 rounded-full bg-cyan-400" />
+
+      {/* paragraphs go here */}
+
+      </div>
+
       <div className="space-y-6">
         {about.paragraphs.map((paragraph, index) => (
           <p
@@ -37,6 +51,47 @@ const About = () => {
           </p>
         ))}
       </div>
+      <div className="mt-10 rounded-2xl border border-cyan-500/20 bg-slate-900/40 p-6">
+  <p className="text-lg italic text-slate-300">
+    "Reliable software is built when quality, automation, and infrastructure work together."
+  </p>
+</div>
+
+<div className="mt-16">
+  <h3 className="text-2xl font-semibold text-white">
+    Professional Journey
+  </h3>
+
+  <div className="mt-4 space-y-8">
+    {timeline.map((item) => (
+      <div
+        key={item.year}
+        className="flex gap-6"
+      >
+        {/* Year */}
+        <div className="w-20 flex-shrink-0">
+          <span className="font-semibold text-cyan-400">
+            {item.year}
+          </span>
+        </div>
+
+        {/* Timeline Content */}
+        <div className="relative border-l border-cyan-500/30 pl-6">
+          <div className="absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full bg-cyan-400" />
+
+          <h4 className="font-semibold text-white">
+            {item.title}
+          </h4>
+
+          <p className="mt-2 text-slate-400 leading-7">
+            {item.description}
+          </p>
+        </div>
+      </div>
+    ))}
+  </div>
+  
+</div>
 
         {/* Right */}
         <div className="grid grid-cols-2 gap-5">
