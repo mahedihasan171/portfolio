@@ -8,6 +8,7 @@
 
 import Navbar from "./components/layout/Navbar";
 import Hero from "./sections/Hero";
+import About from "./sections/About";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       {/* Main page content */}
       <main>
         <Hero />
+        <About/>
       </main>
     </>
   );
