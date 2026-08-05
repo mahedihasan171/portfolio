@@ -15,4 +15,46 @@
   
   .animate-center {
     animation: pulse-center 3s ease-in-out infinite;
+    
   }
+
+  /* ========================================
+   Floating Technology Nodes
+======================================== */
+
+@keyframes float-node {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+  
+    50% {
+      transform: translateY(-4px);
+    }
+  }
+  
+  .animate-node {
+    animation: float-node 4s ease-in-out infinite;
+  }
+  
+  /* Different delays make the movement feel natural */
+  .delay-1 {
+    animation-delay: 0.5s;
+  }
+  
+  .delay-2 {
+    animation-delay: 1s;
+  }
+  
+  .delay-3 {
+    animation-delay: 1.5s;
+  }
+  
+  .delay-4 {
+    animation-delay: 2s;
+  }
+  
+  .delay-5 {
+    animation-delay: 2.5s;
+  }
+  

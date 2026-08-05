@@ -8,6 +8,15 @@
 import "./EngineeringAnimation.css";
 import { technologies } from "../../data/technologies";
 
+const animationDelays = [
+  "",
+  "delay-1",
+  "delay-2",
+  "delay-3",
+  "delay-4",
+  "delay-5",
+];
+
 const EngineeringAnimation = () => {
   return (
     <div className="relative flex h-96 w-96 items-center justify-center">
@@ -88,10 +97,10 @@ const EngineeringAnimation = () => {
       </div>
 
       {/* Technology Labels */}
-        {technologies.map((tech) => (
+        {technologies.map((tech, index) => (
           <div
             key={tech.name}
-            className="absolute -translate-x-1/2 -translate-y-1/2 rounded-md border border-cyan-500/20 bg-slate-900 px-3 py-1 text-xs text-cyan-400 shadow-md"
+            className={`absolute -translate-x-1/2 -translate-y-1/2 animate-node ${animationDelays[index]} rounded-md border border-cyan-500/20 bg-slate-900 px-3 py-1 text-xs text-cyan-400 shadow-md `}
             style={{
               left: tech.x,
               top: tech.y,
